@@ -1,0 +1,23 @@
+{
+  "name": "bullichat",
+  "version": "1.0.0",
+  "description": "Just chatting",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bulliphant/bullichat.git"
+  },
+  "author": "Yellow Elephant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bulliphant/bullichat/issues"
+  },
+  "homepage": "https://github.com/bulliphant/bullichat#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}
