@@ -88,7 +88,7 @@ $(function() {
         .text(data.username)
         .css('color', getUsernameColor(data.username));
       var $messageBodyDiv = $('<span class="messageBody">')
-        .text(data.message);
+        .html(data.message);
   
       var typingClass = data.typing ? 'typing' : '';
       var $messageDiv = $('<li class="message"/>')
@@ -146,7 +146,9 @@ $(function() {
   
     // Prevents input from having injected markup
     const cleanInput = (input) => {
-      return $('<div/>').text(input).html();
+      // Make it work
+      // return $('<div/>').text(input).html();
+      return input;
     }
   
     // Updates the typing event
